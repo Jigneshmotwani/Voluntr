@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/lightblue"
+        android:alpha="0.8">
+        <ImageView
+            android:id="@+id/userProfileTextView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="170dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/profileiconfinal"/>
+
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/lightblue"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/roundborders"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:context=".Profile.AccountProfile">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pfp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="110dp"
+                    android:layout_weight="2"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/profileimg" />
+
+                <ImageView
+                    android:id="@+id/badge_image"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/pfp"
+                    android:layout_alignEnd="@+id/pfp"
+                    android:layout_alignBottom="@+id/pfp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="-50dp"
+                    android:layout_marginTop="-79dp"
+                    android:layout_marginEnd="-70dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_toEndOf="@+id/pfp"
+                    android:src="@drawable/badge3" />
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/name3"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/newshape1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="left"
+                        android:paddingLeft="10sp"
+                        android:hint="Name"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:text="Age"
+                        android:fontFamily="@font/comfortaa"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/age"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/newshape1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="left"
+                        android:paddingLeft="10sp"
+                        android:hint="Age"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/comfortaa"
+                android:text="Phone No."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/Phone"
+                android:layout_width="350dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+
+                android:background="@drawable/newshape1"
+                android:fontFamily="@font/comfortaa"
+                android:gravity="left"
+                android:paddingLeft="10sp"
+                android:hint="Phone No."
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+               android:textSize="20dp"
+                android:fontFamily="@font/comfortaa"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Bio"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/Bio"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/newshape1"
+                android:gravity="top"
+                android:hint="Swipe your way to a better world!"
+                android:inputType="textMultiLine"
+                android:padding="8dp"
+                android:paddingLeft="10sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:fontFamily="@font/comfortaa"
+                android:autoSizeTextType="uniform"
+                android:textSize="19dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Events Completed:"
+                android:textSize="18dp"
+                android:fontFamily="@font/comfortaa"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/eventrecycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/confirm_button"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="left|center"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/comfortaa"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textSize="15dp"
+                    android:text="Confirm"
+                    android:textColor="@color/darkgreen" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/signmeout"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/comfortaa"
+                    android:textStyle="bold"
+                    android:onClick="logoutUser"
+                    android:textAllCaps="false"
+                    android:text="Sign Out"
+                    android:textSize="15dp"
+                    android:textColor="@color/darkgreen" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
+    </ScrollView>
